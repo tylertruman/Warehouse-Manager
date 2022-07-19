@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Warehouse Manager</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    </style>
+  </head>
+  <body class="">
+    <header class="container main-card mt-5 rounded ">
+        <section class="row p-5 text-center ">
+            <div class="col-2 offset-2 pt-2 text-shadow-dark">FILTER BY:</div>
+            <div class="col-2">
+                <button class="btn btn-danger text-shadow-light" id="heavyPackage" onclick="filterPackages('heavy')">HEAVY</button>
+            </div>
+            <div class="col-2">
+                <button class="btn btn-danger text-shadow-light" id="priorityPackage" onclick="filterPackages('priority')">PRIORITY</button>
+            </div>
+            <div class="col-2">
+                <button class="btn btn-danger text-shadow-light" id="fragilePackage" onclick="filterPackages('fragile')">FRAGILE</button>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-12 text-center pt-2"><h3>PACKAGES:</h3></div>
+        </section>
+        <section class="row text-center" id="packages">
+        </section>
+    </header>
+      
+    <script src="app.js"></script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  </body>
+</html>
